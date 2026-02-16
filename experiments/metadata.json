@@ -1,0 +1,9 @@
+{
+    "experiment_name": "Yoga-Neuro Ontological Alignment",
+    "date": "2026-02-17",
+    "total_alignment_pairs": 48,
+    "neuro_abstracts": 244,
+    "yoga_sutras": 195,
+    "hardware": "NVIDIA RTX 4050 Laptop GPU",
+    "max_sequence_length": 512
+}

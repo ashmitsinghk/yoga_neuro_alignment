@@ -1,0 +1,82 @@
+[
+    {
+        "id": "neuro_001",
+        "primary_label": "Autonomic Nervous System",
+        "english_label": "Autonomic Nervous System",
+        "class": "physiological_regulation",
+        "definition": "The part of the peripheral nervous system that regulates involuntary physiological processes including heart rate, blood pressure, respiration, digestion, and arousal. Divided into sympathetic (activation) and parasympathetic (relaxation) branches.",
+        "source": "Principles of Neural Science, Kandel et al."
+    },
+    {
+        "id": "neuro_002",
+        "primary_label": "Default Mode Network",
+        "english_label": "Default Mode Network",
+        "class": "brain_network",
+        "definition": "A large-scale brain network active during rest and internally-focused tasks such as mind-wandering, self-referential thinking, and autobiographical memory retrieval. Includes medial prefrontal cortex, posterior cingulate cortex, and angular gyrus.",
+        "source": "Raichle et al., PNAS 2001"
+    },
+    {
+        "id": "neuro_003",
+        "primary_label": "Neuroplasticity",
+        "english_label": "Neuroplasticity",
+        "class": "neural_adaptation",
+        "definition": "The brain's ability to reorganize itself by forming new neural connections throughout life. Includes structural changes (synaptogenesis, neurogenesis) and functional changes in response to experience, learning, and environmental demands.",
+        "source": "Principles of Neural Science, Kandel et al."
+    },
+    {
+        "id": "neuro_004",
+        "primary_label": "Gamma Oscillations",
+        "english_label": "Gamma Oscillations",
+        "class": "neural_rhythm",
+        "definition": "High-frequency neural oscillations (30-100 Hz) associated with attention, working memory, sensory processing, and consciousness. Increased gamma activity is observed during focused meditation and cognitive integration.",
+        "source": "Buzsáki & Wang, Annual Review of Neuroscience 2012"
+    },
+    {
+        "id": "neuro_005",
+        "primary_label": "Prefrontal Cortex",
+        "english_label": "Prefrontal Cortex",
+        "class": "brain_region",
+        "definition": "The anterior region of the frontal lobe involved in executive functions including attention control, working memory, decision-making, emotion regulation, and self-awareness. Critical for goal-directed behavior and cognitive flexibility.",
+        "source": "Miller & Cohen, Annual Review of Neuroscience 2001"
+    },
+    {
+        "id": "neuro_006",
+        "primary_label": "Interoception",
+        "english_label": "Interoception",
+        "class": "sensory_awareness",
+        "definition": "The sense of the internal physiological state of the body, including awareness of heartbeat, breathing, hunger, temperature, and visceral sensations. Mediated by the insula and anterior cingulate cortex.",
+        "source": "Craig, Nature Reviews Neuroscience 2002"
+    },
+    {
+        "id": "neuro_007",
+        "primary_label": "Vagal Tone",
+        "english_label": "Vagal Tone",
+        "class": "physiological_regulation",
+        "definition": "The activity level of the vagus nerve, the primary parasympathetic nerve regulating heart rate, breathing, and digestive function. Higher vagal tone is associated with better emotional regulation, stress resilience, and cardiovascular health.",
+        "source": "Porges, Biological Psychology 2007"
+    },
+    {
+        "id": "neuro_008",
+        "primary_label": "Salience Network",
+        "english_label": "Salience Network",
+        "class": "brain_network",
+        "definition": "A brain network anchored in the anterior insula and dorsal anterior cingulate cortex that detects and filters salient stimuli, switching between default mode and executive control networks. Critical for attention and awareness.",
+        "source": "Seeley et al., Journal of Neuroscience 2007"
+    },
+    {
+        "id": "neuro_009",
+        "primary_label": "Hippocampal Neurogenesis",
+        "english_label": "Hippocampal Neurogenesis",
+        "class": "neural_adaptation",
+        "definition": "The generation of new neurons in the hippocampus throughout adulthood. Enhanced by physical exercise, environmental enrichment, and learning. Plays a role in memory formation and mood regulation.",
+        "source": "Gage, Science 2000"
+    },
+    {
+        "id": "neuro_010",
+        "primary_label": "Synaptic Plasticity",
+        "english_label": "Synaptic Plasticity",
+        "class": "neural_adaptation",
+        "definition": "The ability of synapses to strengthen or weaken over time in response to changes in activity. Includes long-term potentiation (LTP) and long-term depression (LTD), fundamental mechanisms underlying learning and memory.",
+        "source": "Bliss & Collingridge, Nature 1993"
+    }
+]

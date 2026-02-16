@@ -1,0 +1,7 @@
+base_model: ../models/e5-yoga-neuro-dapt
+loss: MultipleNegativesRankingLoss
+epochs: 8
+batch_size: 16
+learning_rate: 2e-5
+alignment_pairs: 48
+device: cuda

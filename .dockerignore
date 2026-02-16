@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Models (will be downloaded/trained)
+models/
+
+# Logs and temporary files
+*.log
+*.tmp
+project_tree.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Large data files (will be generated)
+data/processed/yoga_corpus.json
+data/processed/yoga_corpus_chunked.json
+data/processed/final_dapt_corpus.json
+data/raw/bryant_2009.txt

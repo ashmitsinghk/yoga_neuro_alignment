@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  yoga-neuro-alignment:
+    build: .
+    image: yoga-neuro-alignment:latest
+    container_name: yoga-neuro-alignment
+
+    # GPU support (requires nvidia-docker)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+
+    volumes:
+      # Mount project directory
+      - .:/app
+      # Persist model cache
+      - huggingface-cache:/app/.cache/huggingface
+
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - TRANSFORMERS_CACHE=/app/.cache/huggingface
+
+    # Keep container running
+    stdin_open: true
+    tty: true
+
+    # Override command for interactive use
+    command: /bin/bash
+
+volumes:
+  huggingface-cache:

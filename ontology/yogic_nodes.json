@@ -1,0 +1,82 @@
+[
+  {
+    "id": "yoga_001",
+    "primary_label": "प्राण",
+    "english_label": "Prana",
+    "class": "vital_energy",
+    "definition": "The vital life force or bio-energy that permeates the universe and sustains all living beings. In yogic philosophy, prana flows through subtle energy channels (nadis) and is regulated through breath control (pranayama).",
+    "source": "Yoga Sutras of Patanjali, Hatha Yoga Pradipika"
+  },
+  {
+    "id": "yoga_002",
+    "primary_label": "चित्त",
+    "english_label": "Chitta",
+    "class": "mind_consciousness",
+    "definition": "The mind-stuff or consciousness field that includes all mental processes, memories, and subconscious impressions (samskaras). It is the totality of the mind including manas (sensory mind), buddhi (intellect), and ahamkara (ego).",
+    "source": "Yoga Sutras of Patanjali 1.2"
+  },
+  {
+    "id": "yoga_003",
+    "primary_label": "वृत्ति",
+    "english_label": "Vritti",
+    "class": "mental_modification",
+    "definition": "Mental modifications, fluctuations, or thought-waves that arise in consciousness. The goal of yoga is to still these fluctuations (chitta vritti nirodha) to achieve a state of pure awareness.",
+    "source": "Yoga Sutras of Patanjali 1.2-1.4"
+  },
+  {
+    "id": "yoga_004",
+    "primary_label": "समाधि",
+    "english_label": "Samadhi",
+    "class": "meditative_state",
+    "definition": "A state of profound meditative absorption where the sense of individual self dissolves and consciousness merges with the object of meditation. The highest state of yogic attainment characterized by complete mental stillness and unity consciousness.",
+    "source": "Yoga Sutras of Patanjali, Chapter 1"
+  },
+  {
+    "id": "yoga_005",
+    "primary_label": "धारणा",
+    "english_label": "Dharana",
+    "class": "concentration",
+    "definition": "Focused concentration or the binding of consciousness to a single point or object. The sixth limb of Ashtanga Yoga, representing sustained attention without distraction.",
+    "source": "Yoga Sutras of Patanjali 3.1"
+  },
+  {
+    "id": "yoga_006",
+    "primary_label": "ध्यान",
+    "english_label": "Dhyana",
+    "class": "meditation",
+    "definition": "Meditative absorption or sustained flow of awareness toward an object of meditation. The seventh limb of Ashtanga Yoga, characterized by uninterrupted contemplation.",
+    "source": "Yoga Sutras of Patanjali 3.2"
+  },
+  {
+    "id": "yoga_007",
+    "primary_label": "प्राणायाम",
+    "english_label": "Pranayama",
+    "class": "breath_regulation",
+    "definition": "The regulation and control of breath to influence the flow of prana (vital energy). Involves techniques of inhalation (puraka), retention (kumbhaka), and exhalation (rechaka) to calm the mind and energize the body.",
+    "source": "Yoga Sutras of Patanjali 2.49-2.53, Hatha Yoga Pradipika"
+  },
+  {
+    "id": "yoga_008",
+    "primary_label": "नाड़ी",
+    "english_label": "Nadi",
+    "class": "energy_channel",
+    "definition": "Subtle energy channels through which prana flows in the subtle body. The three primary nadis are Ida (lunar, left), Pingala (solar, right), and Sushumna (central channel).",
+    "source": "Hatha Yoga Pradipika, Shiva Samhita"
+  },
+  {
+    "id": "yoga_009",
+    "primary_label": "चक्र",
+    "english_label": "Chakra",
+    "class": "energy_center",
+    "definition": "Energy centers or vortices located along the central channel (sushumna nadi) where multiple nadis intersect. Seven primary chakras regulate different aspects of physical, emotional, and spiritual functioning.",
+    "source": "Sat-Chakra-Nirupana, Tantric texts"
+  },
+  {
+    "id": "yoga_010",
+    "primary_label": "संस्कार",
+    "english_label": "Samskara",
+    "class": "mental_impression",
+    "definition": "Subconscious impressions or latent tendencies formed by past experiences, actions, and thoughts. These impressions shape future behavior and mental patterns, stored in the chitta.",
+    "source": "Yoga Sutras of Patanjali 4.9-4.10"
+  }
+]

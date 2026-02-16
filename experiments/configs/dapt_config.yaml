@@ -1,0 +1,8 @@
+model: intfloat/e5-base-v2
+objective: masked_language_modeling
+epochs: 3
+batch_size: 16
+learning_rate: 2e-5
+corpus_size: 2127
+tokenizer_max_length: 512
+device: cuda
