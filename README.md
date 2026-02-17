@@ -10,11 +10,11 @@ The training process consists of:
 
 1. **Domain-Adaptive Pre-Training (DAPT)** on a combined corpus of:
    - 195 Yoga Sutras (Bryant, 2009 translation)
-   - 47 curated neuroscience abstracts
+   - 244 curated neuroscience abstracts
 
 2. **Contrastive Alignment Training** using 48 manually curated yoga–neuroscience concept pairs.
 
-The aligned model increases mean discriminative margin from 0.0401 (base) to 0.2923, with statistically significant increases in discriminative margin relative to both the base and DAPT variants (|d| = 1.79, very large effect).
+The aligned model increases mean discriminative margin from 0.0425 (base) to 0.2826, with statistically significant increases in discriminative margin relative to both the base and DAPT variants (|d| = 5.30, very large effect).
 
 This system enables quantitative investigation of structural correspondences between contemplative cognitive frameworks and neuroscientific constructs.
 
@@ -56,23 +56,18 @@ Alignment quality is measured using:
 
 | Model | Mean Alignment Margin |
 |-------|----------------------|
-| Base (E5-base-v2) | 0.0401 |
-| DAPT | 0.0283 |
-| **Aligned** | **0.2923** |
+| Base (E5-base-v2) | 0.0425 |
+| DAPT | 0.0322 |
+| **Aligned** | **0.2826** |
 
-**Relative improvement**: Aligned model achieves 629% increase over base (computed against base margin).
+**Relative improvement**: Aligned model achieves 565% increase over base (computed against base margin).
 
 ### Statistical Testing
 
-**Paired t-tests (Margin):**
-- Base vs DAPT: t = 2.86, p = 6.30 × 10⁻³
-- DAPT vs Aligned: t = -13.86, p = 3.23 × 10⁻¹⁸
-- Base vs Aligned: t = -12.38, p = 2.13 × 10⁻¹⁶
-
-**Effect Sizes (Cohen's d):**
-- Base vs DAPT: |d| = 0.41 (small-to-medium effect)
-- DAPT vs Aligned: |d| = 2.00 (very large effect)
-- **Base vs Aligned: |d| = 1.79 (very large effect)**
+**Effect Sizes (Paired Cohen's d):**
+- DAPT vs Base: d = -0.60 (medium effect, negative indicates DAPT decreased margin)
+- Aligned vs Base: d = 5.30 (very large effect)
+- **Aligned vs DAPT: d = 5.84 (very large effect)**
 
 The increase in alignment margin indicates significantly improved discriminative structuring of cross-domain embeddings.
 
