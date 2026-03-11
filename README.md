@@ -14,7 +14,7 @@ The training process consists of:
 
 2. **Contrastive Alignment Training** using 48 manually curated yoga–neuroscience concept pairs.
 
-The aligned model increases mean discriminative margin from 0.0425 (base) to 0.2826, with statistically significant increases in discriminative margin relative to both the base and DAPT variants (|d| = 5.30, very large effect).
+The aligned model achieves a mean cosine similarity of **0.697** on unseen test data (5-Fold Cross-Validation), demonstrating a robust and generalizable alignment. The discriminative margin between aligned and random pairs shows a large effect size (|d| = 1.26 – 1.59), confirming significant structural correspondence without overfitting.
 
 This system enables quantitative investigation of structural correspondences between contemplative cognitive frameworks and neuroscientific constructs.
 
@@ -43,33 +43,41 @@ The base sentence-transformer model is further trained on a combined yoga–neur
 
 48 curated concept pairs (e.g., *citta-vṛtti-nirodha* ↔ "executive inhibitory control") are used to train discriminative alignment through cosine similarity optimization.
 
+To ensure robustness and avoid overfitting, the model is evaluated using:
+1. **5-Fold Cross-Validation**: Training on 80% of pairs, testing on 20%.
+2. **Leave-One-Out Cross-Validation (LOO)**: Training on N-1 pairs, testing on the single held-out pair.
+
 ### Evaluation
 
 Alignment quality is measured using:
 
-- Mean alignment margin (aligned similarity − random similarity)
-- Paired t-tests
-- Effect size (Cohen's d)
-- UMAP geometric visualization
+- **Generalization Ability**: Performance on unseen test pairs.
+- **Cohen's d**: Effect size difference between aligned and random pairs.
+- **Statistical Significance**: Paired t-tests.
+- **Geometric Visualization**: UMAP projection of the aligned space.
 
 ## Results Summary
 
-| Model | Mean Alignment Margin |
-|-------|----------------------|
-| Base (E5-base-v2) | 0.0425 |
-| DAPT | 0.0322 |
-| **Aligned** | **0.2826** |
+To effectively evaluate generalization and rule out overfitting, we employed stringent cross-validation protocols.
 
-**Relative improvement**: Aligned model achieves 565% increase over base (computed against base margin).
+| Evaluation Method | Aligned Similarity | Random Similarity | Effect Size (Cohen's d) |
+|-------------------|-------------------|-------------------|-------------------------|
+| **5-Fold Cross-Validation** | 0.697 | 0.526 | **1.26** (Large) |
+| **Leave-One-Out (LOO)** | 0.689 | 0.493 | **1.59** (Very Large) |
 
-### Statistical Testing
+**Key Findings:**
+- The model maintains high alignment similarity (~0.70) even on **unseen test pairs** during cross-validation.
+- The difference between aligned and random pairs is statistically significant ($p < 10^{-9}$), confirming that the model has learned structural semantic correspondences rather than memorizing training data.
+- The effect sizes (1.26 – 1.59) indicate a robust and generalizable alignment between Yoga and Neuroscience concepts.
 
-**Effect Sizes (Paired Cohen's d):**
-- DAPT vs Base: d = -0.60 (medium effect, negative indicates DAPT decreased margin)
-- Aligned vs Base: d = 5.30 (very large effect)
-- **Aligned vs DAPT: d = 5.84 (very large effect)**
+### Visual Validation
+Confusion between true and random pairs is minimal, as shown in the cross-validation distributions:
 
-The increase in alignment margin indicates significantly improved discriminative structuring of cross-domain embeddings.
+![5-Fold Distribution](paper/figures/figure_kfold_cv.png)
+*(Figure A: 5-Fold CV Alignment Distribution)*
+
+![LOO Distribution](paper/figures/figure_loo_cv.png)
+*(Figure B: Leave-One-Out CV Alignment Distribution)*
 
 ### Interpretation Note
 
